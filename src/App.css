@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    overflow-y: scroll;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.add {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-color: #fff; */
+    font-size: 20px;
+    transition: 0.2s;
+    color: #fff;
+    box-shadow: 0px 23px 93px 1px rgba(0, 0, 0, 0.75);
 }
 
-.App-link {
-  color: #61dafb;
+.add:hover {
+    background-color: #8BC34A;
+    color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note {
+    background: linear-gradient(#F9EFAF, #F7E98D);
+    transition: all 0.3s;
+}
+
+.note:hover {
+    box-shadow: 0px 23px 93px 1px rgba(0, 0, 0, 0.75);
+}
+
+.note a {
+    color: black;
+    font-size: 23px;
+}
+
+.note i {
+    transition: all 0.3s;
+}
+
+.del:hover {
+    color: #F44336;
+    transform: rotate(-110deg);
+}
+
+.edit:hover {
+    color: #07f542;
+    transform: rotate(-50deg);
 }
